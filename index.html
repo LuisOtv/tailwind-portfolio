@@ -3,57 +3,155 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></portifolio></title>
+    <title>Luis Otávio - Portfolio</title>
     <link rel="stylesheet" href="/css/output.css" />
+    <link rel="shortcut icon" href="assets/tuye.jpg" type="image/x-icon" />
   </head>
-  <body class="bg-slate-950 pt-10 w-full place-items-center place-content-center text-slate-300">
-    <div class="align-middle w-80">
-      <div class="about place-items-center text-center">
-        <img class="rounded-lg size-20" src="https://pbs.twimg.com/media/F4ZukUIXMAAA0Xt.png" alt="" />
-        <h2 class="pt-2"><strong>Luis Otávio</strong></h2>
-        <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, temporibus!</h3>
+  <body class="bg-slate-950 py-10 w-full text-slate-300 overflow-hidden h-screen">
+    <div class="container mx-auto space-x-5 flex h-full">
+      <!-- Left Column: Profile, Skills, and Projects -->
+      <div class="left w-1/2">
+        <div class="mx-auto w-fit">
+          <!-- Profile Section -->
+          <section class="about text-center">
+            <img class="rounded-lg size-20 mx-auto" src="https://avatars.githubusercontent.com/u/158614623?s=96&v=4" alt="Profile Picture" />
+            <h2 class="pt-2 text-xl font-bold">Luis Otávio</h2>
+            <p class="text-sm text-slate-400">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, temporibus!</p>
+          </section>
+
+          <!-- Skills Section -->
+          <section class="skills text-center py-5">
+            <!-- Languages -->
+            <div class="mb-6">
+              <h3 class="text-lg font-bold mb-2">Languages</h3>
+              <div class="flex flex-wrap justify-center gap-3">
+                <img class="size-12 invert border-2 p-1 rounded-lg border-black" title="HTML" src="/assets/icons/html.png" alt="HTML" />
+                <img class="size-12 invert border-2 p-1 rounded-lg border-black" title="CSS" src="/assets/icons/css.png" alt="CSS" />
+                <img class="size-12 invert border-2 p-1 rounded-lg border-black" title="JavaScript" src="/assets/icons/javaScript.png" alt="JavaScript" />
+                <img class="size-12 invert border-2 p-1 rounded-lg border-black" title="Python" src="/assets/icons/python.png" alt="Python" />
+                <img class="size-12 invert border-2 p-1 rounded-lg border-black" title="C#" src="/assets/icons/csharp.png" alt="C#" />
+                <img class="size-12 invert border-2 p-1 rounded-lg border-black" title="Java" src="/assets/icons/java.png" alt="Java" />
+                <img class="size-12 invert border-2 p-1 rounded-lg border-black" title="SwiftUI" src="/assets/icons/swift.png" alt="SwiftUI" />
+              </div>
+            </div>
+
+            <!-- Frameworks -->
+            <div class="mb-6">
+              <h3 class="text-lg font-bold mb-2">Frameworks</h3>
+              <div class="flex flex-wrap justify-center gap-3">
+                <img class="size-12 invert border-2 p-1 rounded-lg border-black" title="Springboot" src="/assets/icons/springboot.png" alt="Springboot" />
+                <img class="size-12 invert border-2 p-1 rounded-lg border-black" title="TailwindCSS" src="/assets/icons/tailwindcss.svg" alt="TailwindCSS" />
+              </div>
+            </div>
+
+            <!-- Database -->
+            <div class="mb-6">
+              <h3 class="text-lg font-bold mb-2">Database</h3>
+              <div class="flex flex-wrap justify-center gap-3">
+                <img class="size-12 invert border-2 p-1 rounded-lg border-black" title="MongoDB" src="/assets/icons/mongo.png" alt="MongoDB" />
+                <img class="size-12 invert border-2 p-1 rounded-lg border-black" title="MySQL" src="/assets/icons/mysql.png" alt="MySQL" />
+              </div>
+            </div>
+
+            <!-- Tools -->
+            <div class="mb-6">
+              <h3 class="text-lg font-bold mb-2">Tools</h3>
+              <div class="flex flex-wrap justify-center gap-3">
+                <img class="size-12 invert border-2 p-1 rounded-lg border-black" title="Github" src="/assets/icons/github.png" alt="Github" />
+                <img class="size-12 invert border-2 p-1 rounded-lg border-black" title="VSCode" src="/assets/icons/vscode.png" alt="VSCode" />
+                <img class="size-12 invert border-2 p-1 rounded-lg border-black" title="Postman" src="/assets/icons/postman.png" alt="Postman" />
+                <img class="size-12 invert border-2 p-1 rounded-lg border-black" title="Godot" src="/assets/icons/godot.png" alt="Godot" />
+                <img class="size-12 invert border-2 p-1 rounded-lg border-black" title="Unity" src="/assets/icons/unity.png" alt="Unity" />
+                <img class="size-12 invert border-2 p-1 rounded-lg border-black" title="Blender" src="/assets/icons/blender.png" alt="Blender" />
+              </div>
+            </div>
+          </section>
+
+          <!-- Projects Section -->
+          <section class="projects text-center py-5">
+            <h3 class="text-lg font-bold mb-4">Projects</h3>
+            <div class="grid grid-cols-2 gap-4">
+              <button class="p-3 border-2 rounded-lg border-white hover:bg-slate-800 transition-colors">
+                <h4 class="font-bold">Depth 144</h4>
+                <p class="text-sm text-slate-400">Small horror game project</p>
+              </button>
+              <button class="p-3 border-2 rounded-lg border-white hover:bg-slate-800 transition-colors">
+                <h4 class="font-bold">Floor Knight</h4>
+                <p class="text-sm text-slate-400">Made in a weekend</p>
+              </button>
+              <button class="p-3 border-2 rounded-lg border-white hover:bg-slate-800 transition-colors">
+                <h4 class="font-bold">CayTTer</h4>
+                <p class="text-sm text-slate-400">Extension for Twitter</p>
+              </button>
+              <button class="p-3 border-2 rounded-lg border-white hover:bg-slate-800 transition-colors">
+                <h4 class="font-bold">SOS Queimadas</h4>
+                <p class="text-sm text-slate-400">SwiftUI app</p>
+              </button>
+            </div>
+          </section>
+        </div>
       </div>
-      <div class="technologies text-center py-5">
-        <h2><strong>Languages</strong></h2>
-        <div class="flex place-items-center justify-center space-x-4 flex-wrap pt-2">
-          <img class="border-2 rounded-lg border-white size-10 invert" src="/assets/icons/html.png" alt="" />
-          <img class="size-10 invert" src="/assets/icons/css.png" alt="" />
-          <img class="size-10 invert" src="/assets/icons/javaScript.png" alt="" />
-          <img class="size-10 invert" src="/assets/icons/python.png" alt="" />
-          <img class="size-10 invert" src="/assets/icons/csharp.png" alt="" />
-          <img class="size-10 invert" src="/assets/icons/java.png" alt="" />
-          <img class="size-10 invert" src="/assets/icons/swift.png" alt="" />
-        </div>
-        <h2><strong>Frame Works</strong></h2>
-        <div class="flex place-items-center justify-center space-x-4 flex-wrap pt-2">
-          <img class="size-10 invert" src="/assets/icons/springboot.png" alt="" />
-        </div>
-        <h2><strong>Database</strong></h2>
-        <div class="flex place-items-center justify-center space-x-4 flex-wrap pt-2">
-          <img class="size-10 invert" src="/assets/icons/mongo.png" alt="" />
-          <img class="size-10 invert" src="/assets/icons/mysql.png" alt="" />
-        </div>
-        <h2><strong>Apps</strong></h2>
-        <div class="flex place-items-center justify-center space-x-4 flex-wrap pt-2">
-          <img class="size-10 invert" src="/assets/icons/github.png" alt="" />
-          <img class="size-10 invert" src="/assets/icons/vscode.png" alt="" />
-          <img class="size-10 invert" src="/assets/icons/postman.png" alt="" />
-          <img class="size-10 invert" src="/assets/icons/godot.png" alt="" />
-          <img class="size-10 invert" src="/assets/icons/unity.png" alt="" />
-          <img class="size-10 invert" src="/assets/icons/blender.png" alt="" />
+
+      <!-- Right Column: Blog -->
+      <div class="right w-1/2 h-full bg-slate-800 rounded-lg p-5">
+        <h2 class="text-3xl font-bold mb-4">Blog</h2>
+        <div class="overflow-auto pr-2 h-[calc(100vh-10rem)] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-gray-700 [&::-webkit-scrollbar-thumb]:bg-gray-500">
+          <article class="prose prose-slate prose-invert">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima dicta omnis illo, illum quo repellendus placeat iste corrupti accusamus dolore. Architecto, alias
+              neque accusantium exercitationem, corporis et, itaque nesciunt harum deleniti tenetur recusandae.
+            </p>
+            <p>
+              Labore corporis fugiat eveniet, quos recusandae vitae. Fugiat eius dolorem impedit voluptas cupiditate, voluptate nulla, provident labore atque beatae pariatur!
+              Quibusdam distinctio, quae sunt cupiditate dolores consectetur veritatis?
+            </p>
+            <p>
+              Aut iure dolore inventore cumque sed quisquam magni accusamus eveniet enim quam repellat quibusdam quasi maiores error asperiores eaque, libero, voluptatem natus
+              dicta quae aliquid nulla laudantium.
+            </p>
+            <p>
+              Aut iure dolore inventore cumque sed quisquam magni accusamus eveniet enim quam repellat quibusdam quasi maiores error asperiores eaque, libero, voluptatem natus
+              dicta quae aliquid nulla laudantium.
+            </p>
+            <p>
+              Aut iure dolore inventore cumque sed quisquam magni accusamus eveniet enim quam repellat quibusdam quasi maiores error asperiores eaque, libero, voluptatem natus
+              dicta quae aliquid nulla laudantium.
+            </p>
+            <p>
+              Aut iure dolore inventore cumque sed quisquam magni accusamus eveniet enim quam repellat quibusdam quasi maiores error asperiores eaque, libero, voluptatem natus
+              dicta quae aliquid nulla laudantium.
+            </p>
+            <p>
+              Aut iure dolore inventore cumque sed quisquam magni accusamus eveniet enim quam repellat quibusdam quasi maiores error asperiores eaque, libero, voluptatem natus
+              dicta quae aliquid nulla laudantium.
+            </p>
+            <p>
+              Aut iure dolore inventore cumque sed quisquam magni accusamus eveniet enim quam repellat quibusdam quasi maiores error asperiores eaque, libero, voluptatem natus
+              dicta quae aliquid nulla laudantium.
+            </p>
+            <p>
+              Aut iure dolore inventore cumque sed quisquam magni accusamus eveniet enim quam repellat quibusdam quasi maiores error asperiores eaque, libero, voluptatem natus
+              dicta quae aliquid nulla laudantium.
+            </p>
+            <p>
+              Aut iure dolore inventore cumque sed quisquam magni accusamus eveniet enim quam repellat quibusdam quasi maiores error asperiores eaque, libero, voluptatem natus
+              dicta quae aliquid nulla laudantium.
+            </p>
+            <p>
+              Aut iure dolore inventore cumque sed quisquam magni accusamus eveniet enim quam repellat quibusdam quasi maiores error asperiores eaque, libero, voluptatem natus
+              dicta quae aliquid nulla laudantium.
+            </p>
+            <p>
+              Aut iure dolore inventore cumque sed quisquam magni accusamus eveniet enim quam repellat quibusdam quasi maiores error asperiores eaque, libero, voluptatem natus
+              dicta quae aliquid nulla laudantium.
+            </p>
+            <p>
+              Aut iure dolore inventore cumque sed quisquam magni accusamus eveniet enim quam repellat quibusdam quasi maiores error asperiores eaque, libero, voluptatem natus
+              dicta quae aliquid nulla laudantium.
+            </p>
+          </article>
         </div>
       </div>
-      <div class="projects text-center py-5">
-        <h2><strong>Projects</strong></h2>
-        <div class="flex pt-2">
-          <button class="w-full border-2 rounded-lg border-white py-5 px-5">
-            <h1><strong>Depth 144</strong></h1>
-            <p>small horror game project</p>
-          </button>
-        </div>
-      </div>
-      <div class="certificates"></div>
-      <div class="blog"></div>
     </div>
   </body>
 </html>
